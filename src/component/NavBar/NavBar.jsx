@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import {
   AppBar,
   IconButton,
-  Toolbar,
-  Drawer,
   Button,
   Avatar,
   useMediaQuery,

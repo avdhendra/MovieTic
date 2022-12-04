@@ -41,7 +41,8 @@ import {
   StyledModal,
   Video,
 } from "./MovieInfo.styles";
-ContainerSpaceAround
+import { selectGenres } from "../../Features/categorySlice";
+
 function MovieInformation() {
   const [open, setOpen] = useState(false);
   const [isMovieFavorited, setIsMovieFavorited] = useState(false);
@@ -176,7 +177,7 @@ function MovieInformation() {
               key={genre.name}
               onClick={() => {
                 navigate(`/genre/${genre.name}`);
-                dispatch(selectCategory(genre.id));
+                dispatch(selectGenres(genre.id));
               }}
             >
               <GenreImg src={genres[genre.name.toLowerCase()]} alt="" />

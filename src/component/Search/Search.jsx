@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 const Search = () => {
   const [query, setQuery] = useState("");
   const dispatch = useDispatch();
+  const location=useLocation()
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       dispatch(searchMovie(query));
