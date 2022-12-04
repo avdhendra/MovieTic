@@ -1,4 +1,4 @@
-import { styled, Typography } from "@mui/material";
+import { styled, Typography } from '@mui/material';
 
 export const Title = styled(Typography)(({ theme }) => ({
     color: theme.palette.text.primary,
