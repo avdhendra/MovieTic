@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d4e09db.css",
+    "main.js": "/static/js/main.eae98bb9.js",
+    "static/media/movietic-red.svg": "/static/media/movietic-red.727f50ffecd353f894dcd10f7374d28c.svg",
+    "static/media/movietic-black.svg": "/static/media/movietic-black.e3db8bc1405b96949bb5e5226636a602.svg",
+    "index.html": "/index.html",
+    "main.6d4e09db.css.map": "/static/css/main.6d4e09db.css.map",
+    "main.eae98bb9.js.map": "/static/js/main.eae98bb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d4e09db.css",
+    "static/js/main.eae98bb9.js"
+  ]
+}
