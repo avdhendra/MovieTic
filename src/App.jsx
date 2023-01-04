@@ -8,7 +8,6 @@ import {
   Movies,
   NavBar,
   Profile,
-  MovieInfo
 } from './component/index';
 import useAi from './AlPowered/Ai';
 
@@ -19,7 +18,7 @@ function App() {
   const navigate = useNavigate()
   useEffect(() => {
     navigate('/')
-  },[])
+  },[navigate])
   return (
     <>
       <Main>

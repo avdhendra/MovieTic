@@ -2,7 +2,6 @@ import {
   CircularProgress,
   Divider,
   List,
-  ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
@@ -11,7 +10,7 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { GenreImg, LinkContainer, StyledLink } from "./Sidebar.styles";
 import { ReactComponent as MovieTicRed } from "../../assest/movietic-red.svg";
 import { ReactComponent as MovieTicBlack } from "../../assest/movietic-black.svg";
@@ -27,9 +26,10 @@ const Sidebar = ({ setMobileOpen }) => {
   const { data, isFetching } = useGetGenresQuery();
   const dispatch = useDispatch();
   console.log(getCategories);
+
   useEffect(() => {
   setMobileOpen(false)
-},[categoryId])
+},[setMobileOpen,categoryId])
 
 
   const clickHandler = (heading, label, id) => {
