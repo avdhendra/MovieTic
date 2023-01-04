@@ -1,7 +1,6 @@
 import { ArrowBack } from "@mui/icons-material";
 import { Box, Button, CircularProgress, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   useGetActorQuery,
@@ -44,7 +43,7 @@ function Actors() {
         <Grid item lg={5} xl={4}>
           <Img
             src={`https://image.tmdb.org/t/p/w780/${data?.profile_path}`}
-            alt={data.name}
+            alt={data?.name}
           />
         </Grid>
         <Grid
@@ -98,6 +97,6 @@ function Actors() {
       </Box>
     </>
   );
-}
+}                                                     
 
 export default Actors;

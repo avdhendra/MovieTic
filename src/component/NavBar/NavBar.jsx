@@ -90,7 +90,7 @@ function NavBar() {
                 onClick={() => navigate(`/profile/${user.id}`)}
               >
                 {!isMobile && <>My Movies &nbsp;</>}
-                <Avatar sx={{ width: 30, height: 30 }} src={`https://www.themoviedb.org/t/p/w64_and_h64_face${user?.avatar?.tmdb?.avatar_path}`} alt="Profile" />
+                <Avatar sx={{ width: 30, height: 30 }} src={`https://www.themoviedb.org/t/p/w64_and_h64_face${user.avatar.tmdb.avatar_path}`} alt="Profile" />
               </LinkBtn>
             )}
           </div>

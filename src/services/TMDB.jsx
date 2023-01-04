@@ -12,17 +12,17 @@ export const tmdbApi = createApi({
     }),
     //Get Movie By [Type]
     getMovies: builder.query({
-      query: ({ GenreName, PageNo, search }) => {
+      query: ({ GenreName, page, search }) => {
         //*Get Movies by search
       if (search) {
-        return `/search/movie?query=${search}&page=${PageNo}&api_key=${tmdbApiKey}`;
+        return `/search/movie?query=${search}&page=${page}&api_key=${tmdbApiKey}`;
       }
         //* Get Movies By Category //we get it as String
         if (GenreName && typeof GenreName === "string") {
-          return `movie/${GenreName}?page=${PageNo}&api_key=${tmdbApiKey}`;
+          return `movie/${GenreName}?page=${page}&api_key=${tmdbApiKey}`;
         }
         if (GenreName && typeof GenreName === "number") {
-          return `discover/movie?with_genres=${GenreName}&page=${PageNo}&api_key=${tmdbApiKey}`;
+          return `discover/movie?with_genres=${GenreName}&page=${page}&api_key=${tmdbApiKey}`;
         }
 
         return `movie/popular?page=${page}&api_key=${tmdbApiKey}`;
